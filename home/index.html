@@ -1,0 +1,56 @@
+<head>
+    <script src="./public/index.js" defer></script>
+    <link rel="stylesheet" href="./public/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Numans&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="main">
+
+        <h2>Seuss.xyz</h2>
+
+        <p>A free REST API for Dr.Seuss quotes, Seuss as a Service</p>
+
+        <h3>API Usage</h3>
+        <div id="usage">
+            <p> Available in Text or JSON format</p>
+            <p> JSON: GET seuss.xyz/api/json</p>
+            <p> TEXT: GET seuss.xyz/api/text </p>
+        </div>
+
+        <div id="quoteContainer">
+            {
+            <p id="quote"> "quote": "If you keep your eyes open enough, oh, the stuff you will learn. Oh, the most
+                wonderful stuff." </p>
+            }
+        </div>
+
+        <div id="buttons">
+            <a href="https://twitter.com/intent/tweet?text=%22If%20you%20keep%20your%20eyes%20open%20enough,%20oh,%20the%20stuff%20you%20will%20learn.%20Oh,%20the%20most%20wonderful%20stuff.%22 -Dr.Seuss"
+                id="tweet" target="_blank">
+                <button>tweet</button>
+            </a>
+            <button id='clickMe'>refresh</button>
+        </div>
+
+        <h3>FAQ</h3>
+        <div id="faq">
+            <p>Is there a Ratelimit?</p>
+            <p class="leftpad">Yes, you are limited to 100 requests per 15 minutes </p>
+            <p>Can I see the code?</p>
+            <p class="leftpad">Yes, its open source on my <a href="http://www.github.com/arashdai"
+                    target="_blank">Github</a> </p>
+            <p>Do I need to sign up?</p>
+            <p class="leftpad">Nope</p>
+            <hr>
+            <div id="footer">
+                <a href="https://github.com/ArashDai" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i> Made by Arash Dai
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
